@@ -1,0 +1,7 @@
+# Add files here to ignore them from prettier formatting
+
+**/playwright-report/*
+tsconfig.*
+package.json
+package-lock.json
+.prettier

@@ -1,0 +1,29 @@
+{
+  "name": "uster.uaas.laydown.uitests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "npx prettier --check \"*/**/*.{ts,scss,html,json,js}\"",
+    "prettier:fix": "npx prettier --write \"*/**/*.{ts,scss,html,json,js}\"",
+    "artileryTests": "artillery run baseScreen.yml",
+    "artileryTestWithJsonReport": "artillery run --output reports/report.json baseScreen.yml",
+    "transformJsonToHtmlReport": "artillery report --output reports/report.html reports/report.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.25",
+    "artillery": "2.0.7",
+    "playwright": "1.42.1",
+    "prettier": "^2.8.0",
+    "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "@playwright/test": "1.42.1",
+    "crypto-js": "^4.2.0",
+    "node-html-parser": "^6.1.13"
+  }
+}
